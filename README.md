@@ -22,7 +22,7 @@ yarn build
 - [x] Wiring up the API
 - [x] Implement the search functionality including the simple fuzzy search
 - [x] Implement the filter functionality
-- [x] Implement the sorting and routing
+- [x] Implement client routing
 - [x] Implement Dark Mode
 - [x] Add lazy loading to the images
 - [x] Add loading skeletons
