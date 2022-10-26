@@ -1,0 +1,74 @@
+@import "~normalize.css";
+
+//Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+//Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+//Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+//Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+//Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+//White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
+
+/*
+Elements dark mode: hsl(209, 23%, 22%)
+Elements light mode: hsl(0, 0%, 100%)
+
+Background dark mode: hsl(207, 26%, 17%)
+Background light mode: hsl(0, 0%, 98%)
+
+Text dark mode: hsl(0, 0%, 100%)
+Text light mode: hsl(200, 15%, 8%)
+
+Light Mode Input: hsl(0, 0%, 52%)
+*/
+
+
+:root {
+  --primary-color: hsl(0, 0%, 100%);
+  --input-color: hsl(0, 0%, 52%);
+  --bg-color: hsl(0, 0%, 98%);
+  --text-color: hsl(200, 15%, 8%);
+}
+
+[data-theme="dark"] {
+  --primary-color: hsl(209, 23%, 22%);
+  --text-color: hsl(0, 0%, 100%);
+  --input-color: hsl(0, 0%, 70%);
+  --bg-color: hsl(207, 26%, 17%);
+
+  img[src$="svg"] {
+    filter: invert(1);
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  @media screen and (min-width: 576px) {
+    width: 540px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 720px;
+  }
+  @media screen and (min-width: 992px) {
+    width: 960px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1140px;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 1320px;
+  }
+}
