@@ -8,7 +8,7 @@
     <input
         type="text"
         :value="value"
-        @input="$emit('input')"
+        @input="$emit('input', $event.target.value)"
         class="customInput__input"
         :placeholder="placeholder"
     >
